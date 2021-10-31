@@ -294,7 +294,7 @@ slider();
 /*----------- hide all sections except active------------ */
 
 
-/*(()=>{
+(()=>{
    const sections = document.querySelectorAll(".section");
    sections.forEach((section)=>{
       if(!section.classList.contains("active")){
@@ -302,4 +302,12 @@ slider();
 
       }
    })
-})();*/
+})();
+
+window.addEventListener("load", ()=>{
+   //preloder
+   document.querySelector(".preloader").classList.add("fade-out");
+   setTimeout(()=>{
+      document.querySelector(".preloader").style.display="none";
+   },600)
+})
