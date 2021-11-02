@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Muhammed Asif </title>
-     
+
     <!--font awesome-->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-   
+     <!-- ajax file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- main css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- default color skin  -->
@@ -67,9 +68,9 @@
         </div>
           <!--copyright text-->
     <p class="copyright-text">&copy;2021 Muhammed Asif</p>
-   </nav> 
+   </nav>
     <div class="fade-out-effect"></div>
-   
+
     <!--Navigation menu end-->
 
     <!-- home section start-->
@@ -130,10 +131,10 @@
                     </div>
                     <!--social midea link start-->
                     <div class="social-links">
-                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/muhammedasif5055" class="outer-shadow hover-in-shadow"><i class="fab fa-github"></i></a>
                         <a href="#"class="outer-shadow hover-in-shadow"><i class="fab fa-twitter"></i></a>
-                        <a href="#"class="outer-shadow hover-in-shadow"><i class="fab fa-instagram"></i></a>
-                        <a href="#"class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/muhmud_asif/"class="outer-shadow hover-in-shadow"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammed-asif-6717b019a/"class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
 
                     </div>
                     <!--social midea link end-->
@@ -245,34 +246,6 @@
                                         <i class="fas fa-briefcase icon"></i>
                                         <span>Aug,2021-Present</span>
                                         <h3>sales exicutive</h3>
-                                        <h4>O.M.R marketing</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore
-                                            magna aliqua.</p>
-
-                                    </div>
-                                </div>
-                                <!-- timeline item end -->
-                                 <!-- timeline item start -->
-                                 <div class="timeline-item">
-                                    <div class="timeline-item-inner outer-shadow">
-                                        <i class="fas fa-briefcase icon"></i>
-                                        <span>Nov, 2019 - Spt, 2021</span>
-                                        <h3>billing staf</h3>
-                                        <h4>O.M.R marketing</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore
-                                            magna aliqua. </p>
-
-                                    </div>
-                                </div>
-                                <!-- timeline item end -->
-                                 <!-- timeline item start -->
-                                 <div class="timeline-item">
-                                    <div class="timeline-item-inner outer-shadow">
-                                        <i class="fas fa-briefcase icon"></i>
-                                        <span>Aug,2018 - Sep,2019-</span>
-                                        <h3>salesman</h3>
                                         <h4>O.M.R marketing</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                             sed do eiusmod tempor incididunt ut labore et dolore
@@ -572,7 +545,7 @@
                         <div class="testi-item active ">
                             <i class="fas fa-quote-left left"></i>
                             <i class="fas fa-quote-right right"></i>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <img src="img/avtar/Profile-Male-PNG.png" alt="testimonial">
                                 <span>muhammed asif</span>
@@ -582,7 +555,7 @@
                          <div class="testi-item ">
                             <i class="fas fa-quote-left left"></i>
                             <i class="fas fa-quote-right right"></i>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <img src="img/avtar/profil.png" alt="testimonial">
                                 <span>asif</span>
@@ -592,7 +565,7 @@
                          <div class="testi-item">
                             <i class="fas fa-quote-left left"></i>
                             <i class="fas fa-quote-right right"></i>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <img src="img/avtar/Profile-Male-PNG.png" alt="testimonial">
                                 <span>punjen</span>
@@ -649,35 +622,42 @@
         </div>
         <div class="row">
             <div class="contact-form">
-                <form>
+                <form id="submit-form" action="">
                     <div class="row">
                         <div class="w-50">
                             <div class="input-group outer-shadow hover-in-shadow">
-                                <input type="text" placeholder="Name" class="input-control">
+                                <input type="text" placeholder="Name" id="name" name="name" class="input-control">
                             </div>
                             <div class="input-group outer-shadow hover-in-shadow">
-                                <input type="text" placeholder="Email" class="input-control">
+                                <input type="email" placeholder="Email" id="email" name="email" class="input-control">
                             </div>
                             <div class="input-group outer-shadow hover-in-shadow">
-                                <input type="text" placeholder="Subject" class="input-control">
+                                <input type="text" placeholder="Subject" id="subject" name="subject" class="input-control">
                             </div>
                         </div>
                         <div class="w-50">
                             <div class="input-group outer-shadow hover-in-shadow">
-                                <textarea  placeholder="Message" class="input-control"></textarea>
+                                <textarea  placeholder="Message" id="message" name="message" class="input-control"></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="row">
+                        
+                        <div id="error_message" class="ajax_erroe"  ></div>
+                        <div id="success_message" class="ajax_sucess"  ></div>
+                        
                         <div class="submit-btn">
-                            <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+                            <button type="submit"  class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
                         </div>
+                        
+                        
+                        
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
+   
 </section>
 <!-- contact section end -->
 
@@ -690,7 +670,7 @@
                 <p>category - <span class="pp-project-category"></span></p>
             </div>
             <div class="pp-project-details">
-                
+
             </div>
         </div>
     </div>
@@ -734,12 +714,12 @@
 </div>
 </div>
 <!-- style switcher end  -->
-
-
+<script src="js/ajax.js"></script>
 <!-- main js -->
 <script src="js/main.js"></script>
 <!-- style-switcher js -->
 <script src="js/style-switcher.js"></script>
+
 
 </body>
 </html>

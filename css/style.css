@@ -1312,4 +1312,23 @@ text-transform: capitalize;
         max-width: 100%;
         text-align: right;
         padding: 0 15px;
+        margin: 20px;
+    }
+  
+    .contact-section .ajax_erroe{
+        background-color: rgb(250, 49, 49);
+        flex: 0 0 100%;
+        max-width: 100%;
+        color: white;
+        text-align: center;
+        
+    }
+    
+    .contact-section .ajax_sucess{
+        background-color: #1fc586;
+        flex: 0 0 100%;
+        max-width: 100%;
+        color: white;
+        text-align: center;
+        
     }

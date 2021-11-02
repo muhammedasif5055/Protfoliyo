@@ -81,6 +81,9 @@
        left: -30px;
        right: auto;
    }
+   .about-section .skills .skill-item .progress-bar span{
+    margin-top: 14px
+   }
 }
 @media(max-width: 574px){
     .home-section .home-img .img-box{
